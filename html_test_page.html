@@ -5,6 +5,19 @@
     </head>
     <body>
         <h1>How to create a webpage</h1>
-        <p >This is a paragraph</p>
+        <p>This is a paragraph</p>
+        <p>This is my second paragraph</p>
+
+        <script>
+            const successCallback = (position) => {
+                console.log(position);
+            };
+
+            const errorCallback = (error) => {
+                console.error(error);
+            };
+
+            const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback);
+        </script>
     </body>
 </html>
