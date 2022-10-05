@@ -17,7 +17,10 @@
                 console.error(error);
             };
 
-            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+                enableHighAccuracy: true,
+                timeout: 10000
+            });
         </script>
     </body>
 </html>
