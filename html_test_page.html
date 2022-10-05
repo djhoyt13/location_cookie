@@ -17,7 +17,7 @@
                 console.error(error);
             };
 
-            const watchId = navigator.geolocation.watchPosition(successCallback, errorCallback);
+            navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
         </script>
     </body>
 </html>
